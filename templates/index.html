@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artificial XRay reader</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+
+<body>
+    <h1>DISEASE DETECTOR</h1><br>
+    <div class="container">  
+      <form action="/predict" method="POST" enctype="multipart/form-data">
+            <div class="report">
+                <label for="x-ray">Upload your X-ray image</label><br>
+                <input type="file" name="xray_report" accept="image/*">
+            </div><br>
+
+            <div class="upload">
+                <button type="submit">UPLOAD</button>
+            </div><br>
+        </form>
+    </div>
+</body>
+</html>
+
